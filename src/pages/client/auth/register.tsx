@@ -2,6 +2,7 @@ import { Form, Input, Button, Divider } from "antd";
 import { Link } from "react-router-dom";
 import "./register.scss";
 import { useState } from "react";
+import { loginAPI } from "@/services/api";
 interface FieldType {
   fullName: string;
   email: string;
@@ -11,8 +12,10 @@ interface FieldType {
 
 const RegisterPage = () => {
   const [isSubmit, setIsSubmit] = useState(false);
-  const onFinish = (values: FieldType) => {
+  const onFinish = async (values: FieldType) => {
     console.log(values);
+    // const res = await loginAPI("admin@gmail.com", "123456");
+    //success
   };
 
   return (
