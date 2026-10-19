@@ -14,3 +14,13 @@
 - Fixes along the way: import `Form`/`Input` from `antd` (was `react-router-dom`); `label` needs a value; `Input.Password` for password.
 - Extras done: `interface FieldType` replaces `any`; card layout and `Divider`/`Link` like teacher's sample.
 - Pending: run 3 cases in browser (empty / bad email / valid → 4 keys in Console). Understanding of `name` → `values` keys not yet demonstrated.
+
+## Lesson change to #32 (2026-10-19)
+- Student said "làm bài tập 32"; active video set to #32. Evidence: USER_REPORTED.
+- Repo already has axios instance, `loginAPI`, `IBackendRes`; no `registerAPI` yet.
+
+## Video #32 completed (2026-10-19)
+- Completed register flow: `registerAPI`, custom axios instance, `useNavigate`, loading state on button.
+- Updated `message` handling to modern Ant Design v5 standards: `<App>` wrapped in `src/main.tsx` and consumed via `App.useApp()` in `RegisterPage`.
+- Cleaned unused imports (`loginAPI`), optimized `setIsSubmit(false)` placement.
+- Evidence: SOURCE_REVIEWED & BEHAVIOR_VERIFIED (console response confirmed).

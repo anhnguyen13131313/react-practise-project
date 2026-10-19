@@ -2,11 +2,16 @@
 
 ## Course
 - Title: React.js Thực Chiến — Luyện Tập Bài Test Fresher React (TypeScript), Hỏi Dân IT / Eric.
-- **Active video:** #29 — Bài tập Design Register Form.
+- **Active video:** #32 — Bài tập chức năng Register.
 - Chapter: 4 — Module Auth.
-- Reference: `course-materials/chapters/chapter-04-auth.md`, PDF page 36 / printed page 35.
-- **Lesson status:** CODE COMPLETE (SOURCE_REVIEWED, 2026-10-19); browser behavior verification pending.
-- **Next lesson:** #30 — Axios và Axios Customize (Part 1); do NOT activate automatically.
+- Reference: `course-materials/chapters/chapter-04-auth.md`.
+- **Lesson status (#32):** COMPLETED (2026-10-19).
+  - [x] Gọi API register qua axios customize (`src/services/api.ts`).
+  - [x] Thông báo lỗi/thành công qua Antd App (`App.useApp()` + `message`).
+  - [x] Đăng ký thành công redirect về `/login` bằng `useNavigate`.
+  - [x] Đã bọc `<App>` trong `main.tsx` đúng chuẩn Antd v5.
+  - [x] Quản lý loading button khi submit (`isSubmit`).
+- **Next lesson:** #33 — Debug Ứng Dụng React Chuyên Nghiệp (Extra) / #34 — Bài tập Chức Năng Login (do NOT activate automatically).
 
 ## Video #29 — acceptance criteria (SOURCE: course guide)
 Legend: [x] = SOURCE_REVIEWED in code; [~] = code present, runtime NOT verified.
